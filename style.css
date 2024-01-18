@@ -1,0 +1,143 @@
+html {
+    height:100%;
+    font-size: 0.625em;
+    /* 0.625rem=10px , 1rem =16px*/
+    @media (min-width: 1600px) {
+        html {
+            font-size: 0.75em;
+        }
+    }
+}
+
+body {
+     
+    font-family: 'Poiret One', sans-serif;
+    background: rgb(20,30,48);
+    background: radial-gradient(circle, rgba(20,30,48,1) 35%, rgba(0,0,0,1) 76%);
+    background-repeat: repeat;
+    
+}
+
+
+
+.heading {
+
+    box-sizing: border-box;
+    color: #C0C0C0;
+    width: 40%;
+    font-size: 6.6rem;
+    font-weight: bolder;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+    
+}
+
+.button-contaienr {
+    height: 60rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+@media (max-width: 62.5em) {
+    .button-contaienr {
+        flex-direction: column;
+    }
+}
+
+.buttoncoding {
+    flex: 1;
+    background-image:url(keyboard.jpg);
+    background-size: cover;
+    color:#C0C0C0 ;
+    border-radius: 9999rem;
+    background-repeat: 200px auto  no-repeat;
+    box-sizing: border-box;
+    margin: 2rem 5rem;
+    padding-top: 10rem;
+    height: 20rem;
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s, background-size 0.3s, background-position 1s; 
+                      
+}
+.buttoncoding:hover, .buttoncoding:focus, .buttoncoding:active {
+    box-shadow: 0 0 50px #000000;
+    transform: scale(1.1);
+    background-size: 120%;
+    background-position: center center; 
+      
+}
+
+
+.buttonphotography {
+    flex: 1;
+    background-image: url(camera.jpg);
+    background-size: cover;
+    color: rgb(192, 192, 192);
+    border-radius: 9999rem;
+    box-sizing: border-box;
+    margin: 2rem 5rem;
+    padding-top: 10rem;
+    height: 20rem;
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s, background-size 0.3s, background-position 1s; 
+    cursor: pointer;
+}
+
+.buttonphotography:hover, .buttonphotography:focus, .buttonphotography:active {
+    box-shadow: 0 0 50px #000000;
+    transform: scale(1.1);
+    background-size: 120%; 
+    background-position: center center; 
+}
+
+@media (max-width: 62.5em) {
+    .buttoncoding,
+    .buttonphotography {
+        background-image: none; 
+        background-color: rgb(41, 38, 102); 
+        box-shadow: 0 0 100px #C0C0C0;
+        
+    }
+}
+
+@media (max-width: 62.5em) { 
+    .buttonphotography:hover, .buttonphotography:focus, .buttonphotography:active {
+        box-shadow: 0 0 100px rgb(192, 192, 192);
+        transform: scale(1.1);  }
+}
+
+.footer {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    color: #C0C0C0;
+    margin-top: 3em;
+
+}
+hr {
+    border: 0.2rem solid #C0C0C0;
+    border-radius: 999rem;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.35rem 0.35rem 0.35rem rgb(89, 97, 100);
+    background-color:#C0C0C0;
+    border-radius: 99999px;
+    font-weight: bold;
+}
+.header__nav-link:hover {
+    background-color: #868f96;
+    
+}
